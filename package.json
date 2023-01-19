@@ -2,6 +2,16 @@
   "name": "bigtable-emulator-frontend",
   "version": "0.1.0",
   "private": true,
+  "author": "Yusuf Shakeel",
+  "license": "MIT",
+  "homepage": "https://github.com/yusufshakeel/bigtable-emulator-frontend#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusufshakeel/bigtable-emulator-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yusufshakeel/bigtable-emulator-frontend/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
