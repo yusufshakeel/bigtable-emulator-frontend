@@ -12,6 +12,11 @@ export default function Nav() {
                            height={36}/>
                     Bigtable Emulator Frontend
                 </Link>
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li className="nav-item">
+                        <Link className="nav-link" aria-current="page" href="/">Home</Link>
+                    </li>
+                </ul>
             </div>
         </nav>
     );
