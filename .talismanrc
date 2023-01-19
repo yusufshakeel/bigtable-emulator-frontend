@@ -1,0 +1,9 @@
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 8458db62eec1954cc2a89fe1031e26befc30608b212334e435689db8c468c007
+- filename: repository/bigtable-instance.js
+  checksum: 9b826190b07ab74ba342f2e688d226b62fb3f0a0de9967e3c158f3f06d8496ea
+- filename: pages/tables/\[id\].js
+  checksum: 2a881b2ecad1be7c81cdc49d03c67cedad3fedad3ef568a15d033b7bfdc9998d
+- filename: pages/index.js
+  checksum: 46262b23cef14a0adcc515b23a7ef143d16dcded6a345e4e537f7b2adecef214
