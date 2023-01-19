@@ -3,6 +3,7 @@ import {useRouter} from 'next/router'
 import {Fragment} from "react";
 import useSwr from 'swr'
 import Nav from "@/pages/components/nav";
+import Footer from "@/pages/components/footer";
 
 const fetcher = url => fetch(url).then((res) => res.json())
 
@@ -104,6 +105,8 @@ export default function Table() {
                         {handle()}
                     </div>
                 </div>
+                <hr/>
+                <Footer/>
             </Fragment>
         )
     }

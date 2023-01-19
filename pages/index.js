@@ -4,6 +4,7 @@ import {Fragment} from "react";
 import useSwr from 'swr'
 import Link from 'next/link'
 import Nav from "@/pages/components/nav";
+import Footer from "@/pages/components/footer";
 
 const fetcher = url => fetch(url).then((res) => res.json())
 
@@ -19,9 +20,9 @@ export default function Home() {
         return (
             data.tables.sort().map(table => {
                 return (
-                    <div key={table} className="col-md-4 p-3">
-                        <Link href="/tables/[id]" as={`/tables/${table}`}>
-                            {table}
+                    <div key={table} className="col-md-4 p-2">
+                        <Link className="card card-body nav-link" href="/tables/[id]" as={`/tables/${table}`}>
+                            <h4>{table}</h4>
                         </Link>
                     </div>
                 );
@@ -50,6 +51,8 @@ export default function Home() {
                     {handle()}
                 </div>
             </div>
+            <hr/>
+            <Footer/>
         </Fragment>
     )
 }
