@@ -22,7 +22,7 @@ export default function Home() {
                 return (
                     <div key={table} className="col-md-4 p-2">
                         <Link className="card card-body nav-link" href="/tables/[id]" as={`/tables/${table}`}>
-                            <h4>{table}</h4>
+                            <h4><i className="bi bi-table pe-3"></i>{table}</h4>
                         </Link>
                     </div>
                 );

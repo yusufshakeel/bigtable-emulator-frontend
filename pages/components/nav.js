@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Nav() {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top">
+        <nav className="navbar navbar-expand-lg fixed-top" style={{backgroundColor: '#fafafa'}}>
             <div className="container-fluid">
                 <Link className="navbar-brand" href="/">
                     <Image src="/logo.png"

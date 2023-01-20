@@ -36,7 +36,11 @@ export default function Table() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-12">
-                        <h4 className="text-center">Table: <br/> {query.id}</h4>
+                        <h4 className="text-center">
+                            <i className="bi bi-table pe-3"></i>Table:
+                            <br/><br/>
+                            {query.id}
+                        </h4>
                     </div>
                 </div>
                 <hr/>
