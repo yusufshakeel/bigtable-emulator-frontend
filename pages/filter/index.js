@@ -81,7 +81,7 @@ export default function Filter() {
                         </div>
                     </div>
                     <div className="col-auto">
-                        <button type="submit" className="btn btn-primary mb-3">Run</button>
+                        <button type="submit" className="btn btn-primary mb-3"><i className="bi bi-play-fill"></i>Run</button>
                     </div>
                 </form>
                 <hr/>
