@@ -45,3 +45,13 @@ Now run the following command to start the frontend.
 ```shell
 npm run dev
 ```
+
+This will open the frontend app on [http://localhost:3000](http://localhost:3000).
+
+We can run the frontend on a different port by running the following command.
+
+```shell
+PORT=12345 npm run dev
+```
+
+This will open the app on [http://localhost:12345](http://localhost:12345).

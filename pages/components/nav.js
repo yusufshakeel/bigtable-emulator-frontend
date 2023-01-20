@@ -16,6 +16,9 @@ export default function Nav() {
                     <li className="nav-item">
                         <Link className="nav-link" aria-current="page" href="/">Home</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" aria-current="page" href="/filter">Filter</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
