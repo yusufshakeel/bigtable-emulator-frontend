@@ -28,10 +28,17 @@ export default function bigtableRepository() {
         return [];
     };
 
+    const findByRowKey = async (instance, tableName, rowKey, filter) => {
+        const table = getTable(instance, tableName);
+        const [singleRow] = await (filter ? table.row(rowKey).get({filter}) : table.row(rowKey).get({}));
+        return singleRow?.id && {rowKey: singleRow.id, data: singleRow.data};
+    };
+
     return {
         getTable,
         getTables,
         getColumnFamilies,
-        allRows
+        allRows,
+        findByRowKey
     };
 }
