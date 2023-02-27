@@ -6,7 +6,7 @@ fileignoreconfig:
 - filename: pages/tables/\[id\].js
   checksum: 2a881b2ecad1be7c81cdc49d03c67cedad3fedad3ef568a15d033b7bfdc9998d
 - filename: pages/index.js
-  checksum: 8be48b167ca1817d60dbae8c040cff886f782b55f131606504d2df3012c3a17a
+  checksum: c951b0b855cf93d22b6959c0986ad88b8bd0256ebad86cf6b5f15a392c2ca1c0
 - filename: pages/components/table-row-vertical.js
   checksum: e12b9c5ea12e677d0f8cfda86819e4694a1c1ee6f202daa07032ae6595284b78
 - filename: pages/components/table-rows.js
