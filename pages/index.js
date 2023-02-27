@@ -16,17 +16,22 @@ export default function Home() {
         if (isLoading) return <div>Loading...</div>
         if (!data) return null
 
-        const {tables} = data;
+        const tableHTML = data.tables.sort().map(table => {
+            return (
+                <div key={table} className="col-md-4 p-2">
+                    <Link className="card card-body nav-link" href="/tables/[id]" as={`/tables/${table}`}>
+                        <h4><i className="bi bi-table pe-3"></i>{table}</h4>
+                    </Link>
+                </div>
+            );
+        });
         return (
-            data.tables.sort().map(table => {
-                return (
-                    <div key={table} className="col-md-4 p-2">
-                        <Link className="card card-body nav-link" href="/tables/[id]" as={`/tables/${table}`}>
-                            <h4><i className="bi bi-table pe-3"></i>{table}</h4>
-                        </Link>
-                    </div>
-                );
-            })
+            <Fragment>
+                <div>
+                    <p className="text-center">Total Tables: {data.tables.length}</p>
+                </div>
+                {tableHTML}
+            </Fragment>
         )
     };
 
