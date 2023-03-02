@@ -15,3 +15,7 @@ fileignoreconfig:
   checksum: 6034e5fdcebba4ebc7787073380e57f8ac6bbfcda095f0ddce9f6d14bf2a0270
 - filename: pages/filter/index.js
   checksum: 19e7864110ae8ad463757d72b4dcad65456de8e21d88d97e85543aaba6527d99
+- filename: pages/api/bigtable/query/conditional.js
+  checksum: 230a2edaf9e2a11b4c73c40bcb136d3a30d9895d37c26c5338a06ba29ee8d320
+- filename: pages/query/index.js
+  checksum: 83b8fa7106c87bd1c98449eb784b5ac2bb89d6246062c06b23fb271ba733caf8

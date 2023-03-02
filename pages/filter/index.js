@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
 import {Fragment, useState} from "react";
 import useSwr from 'swr'
 import Nav from "@/pages/components/nav";
@@ -34,16 +33,16 @@ export default function Filter() {
         const rowKey = event.target.elements['rowKey-input'].value;
 
         if (!rowKey?.length) {
-            setFilteredResult(<div>Enter Row Key</div>)
+            setFilteredResult('Enter Row Key')
             return;
         }
 
         const response = await fetcher(`/api/bigtable/query/table-row?tableName=${selectedTable}&rowKey=${rowKey}`);
 
         if (response.error) {
-            setFilteredResult(<div>Failed to load row</div>)
+            setFilteredResult('Failed to load row')
         } else if (!response?.row?.data) {
-            setFilteredResult(<div>No record</div>)
+            setFilteredResult('No record')
         } else {
             const columnFamiliesAndColumnQualifiers = columnFamiliesAndColumnQualifiersList([response.row]);
             setFilteredResult(TableRowVertical(columnFamiliesAndColumnQualifiers, response.row))
