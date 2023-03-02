@@ -14,7 +14,6 @@ export default function Query() {
         event.preventDefault();
         setErrorMessage('');
         setFilteredResult('');
-        console.log(query);
 
         if (query.length === 0) {
             return;
@@ -26,8 +25,6 @@ export default function Query() {
         }))
             .then(response => response.json())
             .catch(error => error.json());
-
-        console.log(response)
 
         if (response.error) {
             setErrorMessage(response.error.message);
@@ -75,6 +72,8 @@ export default function Query() {
                         <p>Sample query</p>
                         <pre>{`{"from": "TABLE_NAME"}`}</pre>
                         <pre>{`{"from": "TABLE_NAME", "rowKey": "ROW_KEY"}`}</pre>
+                        <pre>{`{"from": "TABLE_NAME", "rowContainsAnyOf": ["value1","value2"]}`}</pre>
+                        <pre>{`{"from": "TABLE_NAME", "rowContainsAllOf": ["value1","value2"]}`}</pre>
                     </div>
                 </div>
 

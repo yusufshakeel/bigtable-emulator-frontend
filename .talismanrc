@@ -12,10 +12,10 @@ fileignoreconfig:
 - filename: pages/components/table-rows.js
   checksum: 8b882107e841308594a0bde0f6c804d1f3ab6a34f5ee1843c3b9469b6547514a
 - filename: repository/bigtable-repository.js
-  checksum: 6034e5fdcebba4ebc7787073380e57f8ac6bbfcda095f0ddce9f6d14bf2a0270
+  checksum: 1f49e7479e6477b07e7e9ed5a592df981f7fdf81e048c3a28e865abc8706f4c9
 - filename: pages/filter/index.js
   checksum: 19e7864110ae8ad463757d72b4dcad65456de8e21d88d97e85543aaba6527d99
 - filename: pages/api/bigtable/query/conditional.js
-  checksum: 230a2edaf9e2a11b4c73c40bcb136d3a30d9895d37c26c5338a06ba29ee8d320
+  checksum: 5877824fe2fe3a2142b693df5e5c486100c6bccebf75913c3a859e40156a2c3d
 - filename: pages/query/index.js
   checksum: 83b8fa7106c87bd1c98449eb784b5ac2bb89d6246062c06b23fb271ba733caf8
