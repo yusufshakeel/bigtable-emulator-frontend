@@ -19,6 +19,9 @@ export default function Nav() {
                     <li className="nav-item">
                         <Link className="nav-link" aria-current="page" href="/filter">Filter</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" aria-current="page" href="/query">Query</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
